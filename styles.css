@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffcccc;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 3px solid #ff6666;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #ff3366;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #555;
+    font-style: italic;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    padding: 20px;
+}
+
+.image-container {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caption {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.1rem;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.social-links {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.social-links h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff3366;
+}
+
+.social-links ul {
+    list-style: none;
+}
+
+.social-links ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.social-links ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #ff3366;
+    transition: color 0.3s ease;
+}
+
+.social-links ul li a:hover {
+    color: #cc0066;
+}
+
+footer {
+    background-color: #ffcccc;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #555;
+}
